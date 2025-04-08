@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing</title>
-    <link rel="stylesheet" href="../src/css/tailwind.css">
+    <link rel="stylesheet" href="../src/css/static.css">
     <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="stylesheet" href="../src/css/all.min.css">
     <link rel="stylesheet" href="../src/css/normalize.css">
@@ -17,17 +17,48 @@
     <link rel="icon" type="image/png" href="../assets/images/imgs/logo.png">
 </head>
 <body>
-    
     <!-- start header -->
-    <div class="header">
-        <h1 class="text-3xl font-bold text-red-500 bg-blue-300">Header</h1>
-        <h2>Hello Mahmoud</h2>
+    <div class="header pt-0">
+        <div class="container flex justify-between items-center">
+            <div class="logo flex items-center gap-3 animate__animated animate__fadeInLeftBig">
+                <img src="../assets/images/imgs/logo.png" alt="" class="w-6 h-6">
+                <h1>Positivus</h1>
+            </div>
+            <div class="nav flex items-center">
+                <ul class="nav-list flex gap-10">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <button class="btn"><a href="#">Request a quote</a></button>
+                </ul>
+        </div>
+        </div>
     </div>
-    <!-- start header -->
-    
+    <!-- end header -->
+    <!-- start home page -->
+    <div class="home">
+        <div class="container flex justify-between gap-10">
+            <div class="text-content">
+                <h1 class="m-0">Navigating the digital landscape for success</h1>
+                <p class="p-5">Our digital marketing agency helps businesses grow and succeed online through
+                    a range of services including SEO, PPC, social media marketing, and content creation.</p>
+                    <button class="btn text-white hover:cursor-pointer"><a href="#">Book a consultation</a></button>
+            </div>
+            <div class="image-homepage">
+                <img class="animate__animated animate__backInRight" src="../assets/images/imgs/Homeimage.png" alt="">
+            </div>
+        </div>
+        <div class="arrow-down">
+            <img class="animate__animated animate__fadeInUpBig image hover:cursor-pointer"
+            src="../assets/images/imgs/Group.png" alt="">
+        </div>
+    </div>
+    <!-- end home page -->
     <script src="../src/js/main.js"></script>
     <!-- Start Links For WoW.JS -->
-    <script src="../src/js/wow.min.js"></script>
-    <script>new WOW().init();</script>
+    <!-- <script src="../src/js/wow.min.js"></script>
+    <script>new WOW().init();</script> -->
 </body>
 </html>

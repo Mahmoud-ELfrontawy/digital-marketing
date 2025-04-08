@@ -1,8 +1,8 @@
 @import "tailwindcss";
 *{
-    border: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    border: none;
     box-sizing: border-box;
 }
 :root{
@@ -16,30 +16,30 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
-}
-span{
-    
+    overflow: hidden;
 }
 a{
     text-decoration: none;
-}
-li{
-    
 }
 ul {
     list-style: none;
 }
 .container {
     max-width: 1200px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+@media (min-width: 450px){
+    .container {
+        width: 500px;
+        }
 }
   /* Small */
 @media (min-width: 768px) {
     .container {
-    width: 750px;
+    width: 700px;
     }
 }
   /* Medium */
@@ -54,3 +54,73 @@ ul {
     width: 1200px;
     }
 }
+/* start header */
+.header .nav .nav-list .btn{
+    border: 1px solid var(--dark-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+.header .nav .nav-list .btn:hover{
+    background-color: var(--dark-color);
+    color: #fff;
+    cursor: pointer;
+    transition:0.4s;
+}
+.header .nav .nav-list li{
+    display: flex;
+}
+
+.header .nav .nav-list li a{
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+    transition: 0.1s;
+}
+/* end header */
+/* start home page */
+.home .container .text-content h1{
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 3.5em;
+}
+.home .container .text-content p{
+    padding: 20px 20px 20px 0;
+    line-height: 25px;
+}
+.home .container .text-content .btn{
+    padding: 20px 0 20px 0;
+}
+.home .container .text-content .btn a{
+    border: 1px solid var(--dark-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: var(--dark-color);
+}
+.home .container .text-content{
+    width: 530px;
+    padding:0 40px 0 0;
+}
+.home .container .image-homepage{
+    width: 450px;
+}
+.home .arrow-down{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    animation: rotateInfinite 2s linear infinite;
+}
+
+/* end home page */
+/* animations */
+@keyframes rotateInfinite {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+/* end animations */
