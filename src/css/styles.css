@@ -171,6 +171,34 @@ ul {
     cursor: pointer;
 }
 /* end Services */
+/* start free proposal */
+.proposal .container{
+    height: 350px;
+    background-color: var(--grey-color);
+    border-radius: 30px;
+}
+.proposal .container .content-proposal{
+    width: 500px;
+    padding: 0 40px 0 0;
+}
+.proposal .container .content-proposal h1{
+    font-size: 2em;
+}
+.proposal .container .content-proposal p{
+    padding: 20px 20px 20px 0;
+}
+.proposal .container .content-proposal .btn{
+    padding: 40px 0 20px 0;
+}
+.proposal .container .content-proposal .btn a{
+    border: 1px solid var(--dark-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: var(--dark-color);
+}
+/* end free proposal */
+
+
 /* animations */
 @keyframes rotateInfinite {
     0% {
