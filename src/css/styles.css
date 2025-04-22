@@ -197,7 +197,30 @@ ul {
     background-color: var(--dark-color);
 }
 /* end free proposal */
-
+/* start Case Studies */
+.case-studies .container .title-head .par-title{
+    width: 500px;
+}
+.case-studies .title-head .main-title{
+    background-color: var(--main-color);
+}
+.case-studies .container .case-content{
+    background-color: var(--dark-color);
+    height: 325px;
+    border-radius: 30px;
+    padding: 70px 60px 70px 60px;
+}
+.case-studies .container .case-content .content1{
+    width: 270px;
+    height: 165px;
+}
+.case-studies .container .case-content .content1 .arrow1{
+    
+    p{
+        color: var(--main-color);
+    }
+}
+/* end Case Studies */
 
 /* animations */
 @keyframes rotateInfinite {
