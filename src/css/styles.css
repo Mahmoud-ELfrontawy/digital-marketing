@@ -1,10 +1,11 @@
 @import "tailwindcss";
-*{
+/* *{
     padding: 0;
     margin: 0;
     border: none;
     box-sizing: border-box;
-}
+} */
+
 :root{
     --main-color: #B9FF66;
     --dark-color: #191A23;
@@ -16,7 +17,7 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #FFFFFF;
-    overflow: hidden;
+    
 }
 a{
     text-decoration: none;
@@ -68,16 +69,29 @@ ul {
 }
 .header .nav .nav-list li{
     display: flex;
+
 }
 
 .header .nav .nav-list li a{
     display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight:500;
     align-items: center;
-    color: var(--dark-color);
-    transition: 0.1s;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 10px;
+    transition: 0.4s all;
+}
+.header .nav .nav-list li a:hover{
+    color: var(--grey-color);
+    background-color: var(--dark-color);
 }
 /* end header */
 /* start home page */
+.home{
+    height: calc(100vh - 150px);
+}
 .home .container .text-content h1{
     margin: 0;
     padding-bottom: 20px;
@@ -114,6 +128,49 @@ ul {
 }
 
 /* end home page */
+/* start Services */
+.Services .container .title-head .par-title{
+    width: 500px;
+}
+.Services .title-head .main-title{
+    background-color: var(--main-color);
+}
+.Services .card{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.05),
+    0 10px 15px rgba(0, 0, 0, 0.08),
+    0 20px 25px rgba(0, 0, 0, 0.05),
+    0 2px 5px rgba(0, 0, 0, 0.08);
+    background-color: var(--grey-color);
+    border-radius: 35px;
+    transition: 0.4s all;
+}
+.Services .card2,
+.Services .card5{
+    background-color: var(--main-color);
+}
+.Services .card3,
+.Services .card6{
+    background-color: var(--dark-color);
+}
+.Services .card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    transform: translateY(-20px);
+}
+.Services .main-card .card .card-content .card-text h1{
+    margin: 0;
+    padding: 5px 8px;
+    background-color: var(--main-color);
+}
+.Services .main-card .card .learn-more{
+    transition: 0.4s all;
+}
+.Services .main-card .card .learn-more img:hover,
+.Services .main-card .card .learn-more p:hover{
+    cursor: pointer;
+}
+/* end Services */
 /* animations */
 @keyframes rotateInfinite {
     0% {
