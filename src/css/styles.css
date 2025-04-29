@@ -289,6 +289,42 @@ ul {
     transform: scale(1);
 }
 /* end Our Working Process */
+/* start team */
+.team .container .title-head .main-title{
+    background-color: var(--main-color);
+}
+.team .team-card .card1{
+    width: 370px;
+    height: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.05),
+    0 10px 15px rgba(0, 0, 0, 0.08),
+    0 20px 25px rgba(0, 0, 0, 0.05),
+    0 2px 5px rgba(0, 0, 0, 0.08);
+    background-color: var(--grey-color);
+    border-radius: 35px;
+    transition: 0.4s all;
+}
+.team .team-card .card1:hover,
+.team .team-card .card1 .bord:hover,
+.team-card .card1 .head-card .information p:hover,
+.team-card .card1 .content p:hover{
+    background-color: var(--dark-color);
+    color: #fff;
+
+}
+.team .container .btn{
+    padding: 30px 0 20px 0;
+}
+.team .container .btn a{
+    border: 1px solid var(--dark-color);
+    padding: 15px 60px;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--dark-color);
+}
+/* end team */
 /* animations */
 @keyframes rotateInfinite {
     0% {
