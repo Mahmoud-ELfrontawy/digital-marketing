@@ -1,15 +1,16 @@
 @import "tailwindcss";
-/* *{
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
-} */
+
 
 :root{
     --main-color: #B9FF66;
     --dark-color: #191A23;
     --grey-color: #F3F3F3;
+}
+.bg-dark-color{
+    background-color: var(--dark-color);
+}
+.text-main-color{
+    color: var(--main-color);
 }
 html {
     scroll-behavior: smooth;
@@ -325,6 +326,60 @@ ul {
     background-color: var(--dark-color);
 }
 /* end team */
+/* Start Testimonials */
+.Testimonials .container .title-head .main-title{
+    background-color: var(--main-color);
+}
+.Testimonials .testimonials-container .testimonials-cards .testimonials-card1 .swiper{
+    position: relative;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    padding: 30px;
+    p{
+        color: white;
+        line-height: 30px;
+    }
+}
+.Testimonials .testimonials-container .testimonials-cards .testimonials-card1 .swiper::before{
+    content: "";
+    position: absolute;
+    left: 38px;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--main-color); 
+}
+.Testimonials .testimonials-container .testimonials-cards .infromation-user{
+    transform: translateX(55px);
+    width: fit-content;
+}
+.Testimonials .testimonials-cards .buttons{
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Testimonials .testimonials-cards .buttons .bullets i.active{
+    color: var(--main-color);
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.Testimonials .testimonials-cards .buttons .swiper-button-next i,
+.Testimonials .testimonials-cards .buttons .swiper-button-prev i{
+    font-size: 20px;
+}
+.Testimonials .testimonials-cards .buttons .swiper-button-next i.none,
+.Testimonials .testimonials-cards .buttons .swiper-button-prev i.none{
+    color: dimgrey;
+    cursor: not-allowed;
+}
+/* End Testimonials */
 /* animations */
 @keyframes rotateInfinite {
     0% {
@@ -334,4 +389,3 @@ ul {
         transform: translateX(-50%) rotate(360deg);
     }
 }
-/* end animations */
