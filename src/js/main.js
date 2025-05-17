@@ -85,3 +85,17 @@ activeBullet();
 NextAndPrev();
 checkButtons(); 
 
+
+// contact-us bullet active
+
+let dots = document.querySelectorAll(".dot-span")
+
+function alldots() {
+    dots.forEach(dot => {
+        dot.addEventListener("click", (e) => {
+            dots.forEach(b => b.classList.remove("dot"));
+            e.currentTarget.classList.add("dot");
+        });
+    });
+}
+alldots()

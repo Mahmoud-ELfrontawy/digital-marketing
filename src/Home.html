@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing</title>
+    <meta name="description" content="Discover modern digital Marketing with Digital Marketing.
+    Manage your finances seamlessly with our secure and easy-to-use platform.">
+    <meta name="keywords" content="digital Marketing, finance, Marketing app, modern Marketing">
+    <meta name="author" content="Mahmoud Mohamed Atef">
+    <title>Digital Marketing | Next Generation Digital Marketing</title>
+    <link rel="preload" href="../src/css/static.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../src/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../src/css/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
     <link rel="stylesheet" href="../src/css/static.css">
     <link rel="stylesheet" href="../src/css/all.min.css">
     <link rel="stylesheet" href="../src/css/normalize.css">
+    </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
-    <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- project logo -->
     <link rel="icon" type="image/png" href="../assets/images/imgs/logo-white.png">
 </head>
 
@@ -47,17 +53,16 @@
                     a range of services including SEO, PPC, social media marketing, and content creation.</p>
                 <button class="btn text-white hover:cursor-pointer"><a href="#">Book a consultation</a></button>
             </div>
-            <div class="image-homepage animate__animated animate__backInRight wow"data-wow-delay="0.4s">
-                <img src="../assets/images/imgs/Homeimage.png" alt="">
+            <div class="image-homepage animate__animated animate__backInRight wow" data-wow-delay="0.4s">
+                <img src="../assets/images/imgs/Homeimage.png" alt="Digital marketing illustration">
             </div>
         </div>
-        <a href="#Services">
+        <a href="#Services" aria-label="Scroll down to Services section">
             <div class="arrow-down hover:cursor-pointer ">
                 <img class="animate__animated animate__fadeInRight image wow" 
-                src="../assets/images/imgs/Group.png" alt="" data-wow-delay="0.4s">
+                src="../assets/images/imgs/Group.png" alt="Arrow down illustration" data-wow-delay="0.4s">
             </div>
         </a>
-
     </div>
     <!-- end home page -->
     <!-- start Services -->
@@ -182,7 +187,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- end Services -->
     <!-- start free proposal -->
@@ -247,7 +251,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- end Case Studies -->
@@ -502,7 +505,7 @@
     </div>
     <!-- end Team -->
     <!-- Start Testimonials -->
-    <div class="Testimonials pt-20">
+    <div class="Testimonials pt-20 pb-10">
         <div class="container">
             <div class="title-head flex items-center gap-10 pb-5">
                 <h1 class="main-title text-black">Testimonials</h1>
@@ -580,6 +583,60 @@
         </div>
     </div>
     <!-- End Testimonials -->
+    <!-- start Contact Us -->
+    <div class="contact-us pt-10 pb-10 overflow-hidden">
+        <div class="container">
+            <div class="title-head flex items-center gap-10 pb-5">
+                <h1 class="main-title text-black bg-main-color">Contact Us</h1>
+                <p class="par-title w-105">Connect with Us: Let's Discuss
+                    Your Digital Marketing Needs
+                </p>
+            </div>
+            <div class="contact-us-main h-195 flex flex-col">
+                <div class="contact-us-container bg-grey-color flex gap-60 rounded-4xl h-195 pt-15 pb-20 px-20 overflow-hidden">
+                    <div class="container">
+                        <div class="main-form flex items-center justify-start gap-3 pb-10 w-140">
+                            <div class="form flex gap-2 w-37 h-7 items-center">
+                                <span id="dot" class="dot-span relative p-2 w-6 h-6 flex items-center justify-center text-2xl hover:cursor-pointer">
+                                    <i class="fa-regular fa-circle hover:cursor-pointer"></i></span>
+                                <label for="opt1" class="custom-label">Say Hi</label>
+                            </div>
+    
+                            <div class="form flex gap-2 w-37 h-7 items-center">
+                                <span id = "dot" class="dot-span relative p-2 w-6 h-6 flex items-center justify-center text-2xl hover:cursor-pointer">
+                                    <i class="fa-regular fa-circle hover:cursor-pointer"></i></span>
+                                <label for="opt2" class="custom-label">Get a Quote</label>
+                            </div>
+                        </div>
+                        <div class="form2 w-140 h-115 flex flex-col gap-10">
+                            <div>
+                                <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Name*</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name"
+                                class="w-full px-4 py-4 border bg-white border-gray-300 rounded-lg focus:outline-none"/>
+                                </div>
+                                <div>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email*</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com"
+                                class="w-full px-4 py-4 border bg-white border-gray-300 rounded-lg focus:outline-none"/>
+                                </div>
+                            
+                                <div>
+                                <label for="message" class="block mb-2 text-sm font-medium text-gray-700 ">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Your message here..."
+                                    class="w-full px-4 h-40 py-4 border bg-white border-gray-300 rounded-lg focus:outline-none"></textarea>
+                                </div>
+                                <button type="submit"
+                                        class="w-full bg-black text-white font-semibold
+                                        py-5 px-10 rounded-lg transition hover:cursor-pointer duration-200">Send Message
+                                    </button>
+                        </div>
+                    </div>
+                        <img class="w-162.5 h-162.5" src="../assets/images/imgs/Mask group.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- end Contact Us -->
     <script src="../src/js/main.js"></script>
     <!-- Start Links For WoW.JS -->
     <script src="../src/js/wow.min.js"></script>
